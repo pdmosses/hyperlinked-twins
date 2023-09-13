@@ -6,6 +6,15 @@ A hyperlinked twin supports online navigation in the language project
 by enhancing the raw code from the repo with syntax-based highlighting,
 and with hyperlinks between declarations of and references to names.
 
+A paper about generation of hyperlinked twins is 
+[to be presented at SLE](https://2023.splashcon.org/home/sle-2023#event-overview) in October 2023:
+
+> Online Name-Based Navigation for Software Meta-languages
+
+!!! info
+
+    [The author preprint is available on arXiv](https://arxiv.org/abs/2309.06121).
+
 Both the highlighting and the hyperlinks are generated from the metadata used by Spoofax.
 
 Spoofax is used to generate the sources of the webpages from raw files in Spoofax metalanguagea:
