@@ -24,16 +24,18 @@ SDF3 and NABL.
 
 ## Spoofax meta-language projects
 
+The descriptions of the meta-languages below are excerpts from the Spoofax documentation websites.
+
 ### SDF3
 
 [org.metaborg.meta.lang.template/syntax/TemplateLang.sdf3](https://pdmosses.github.io/sdf/org.metaborg.meta.lang.template/syntax/TemplateLang.sdf3/)
 
-SDF3 is the third version of the Syntax Definition Formalism.
-It is recommended for use in Spoofax for simultaneously defining the concrete and abstract syntax of languages.
-Through the use of so-called templates, SDF3 can also be used to define a pretty-printer.
+> SDF3 is the third version of the Syntax Definition Formalism.
+> It is recommended for use in Spoofax for simultaneously defining the concrete and abstract syntax of languages.
+> Through the use of so-called templates, SDF3 can also be used to define a pretty-printer.
 
-The syntax of the SDF3 meta-language is specified in SDF3 itself.
-This example demonstrates generation of a hyperlinked twin from a bootstrapped meta-language specification.
+> The syntax of the SDF3 meta-language is specified in SDF3 itself.
+> This example demonstrates generation of a hyperlinked twin from a bootstrapped meta-language specification.
 
 ### NaBL
 
@@ -41,16 +43,37 @@ This example demonstrates generation of a hyperlinked twin from a bootstrapped m
 
 [org.metaborg.meta.lang.nabl/trans/analysis/names.nab](https://pdmosses.github.io/nabl/org.metaborg.meta.lang.nabl/trans/analysis/names.nab/)
 
+> NaBL stands for Name Binding Language and the acronym is pronounced ‘enable’. Name binding is specified in NaBL in terms of:
+> 
+> - namespaces
+> - binding instances (name declarations)
+> - bound instances (name references)
+> - scopes
+> - imports
+
 ### NaBL2
 
 [org.metaborg.meta.nabl2.lang/syntax/NaBL2Lang.sdf3](https://pdmosses.github.io/nabl/org.metaborg.meta.nabl2.lang/syntax/NaBL2Lang.sdf3/)
 
+> The NaBL2 ‘Name Binding Language’ supports the specification of name binding and type checking rules of a language.
+> NaBL2 uses a constraint-based approach, and uses scope graphs for name resolution.
+
 ### Statix
 
 [statix.lang/syntax/StatixLang.sdf3](https://pdmosses.github.io/nabl/statix.lang/syntax/StatixLang.sdf3/)
+
+> Statix specifications are organised in modules. In Statix, programs, types and all other data are represented using terms.
+> Type-checking a program is performed by solving a set of constraints over terms.
+> In addition to these built-in constraints, specification writers can define their own constraints.
+
+> Type-checking is closely related to, and strongly intertwined with, name resolution.
+> For that reason, Statix has built-in support for modelling name binding patterns in the form of scope graphs.
+> During type-checking, names can be resolved using queries.
 
 ## A MetaBorgCube language project
 
 ### Java Front
 
 [java-front/lang.java/syntax/metaborg-java.sdf3](https://pdmosses.github.io/java-front/lang.java/syntax/metaborg-java.sdf3/)
+
+> A declarative specification of Java 8's syntax in Spoofax.
