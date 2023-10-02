@@ -10,10 +10,10 @@ The hyperlinks between name definitions and references were generated from the n
 used in the Spoofax language workbench.
 
 Similarly, the syntax highlighting on the web pages uses CSS rules generated from the editor services
-specification used by editors in windows.
+specification used by Spoofax editor windows.
 
 Currently, the examples of hyperlinked twins include specifications only in the Spoofax meta-languages
-SDF3 and NABL.
+SDF3 and NaBL.
 
 !!! note
 

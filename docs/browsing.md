@@ -19,8 +19,6 @@ otherwise in the file with the file with the first relative URL, ordered lexicog
 
 In general, there may be any number of references to a name declaration.
 Each declaration in the generated webpage links to the first such reference.
-(When browsing or editing files in the Spoofax language workbench,
-declarations don't provide any links to references.)
 
 Each name reference and declaration has a `title` attribute that browsers may display
 when hovering over the name with a pointing device.[^title]
@@ -54,13 +52,14 @@ to ensure that alignment corresponds exactly to that shown on GitHub.
 
 !!! note
 
-    Unfortunately, many files in Spoofax meta-languages contain tab characters.
+    Unfortunately, many files in Spoofax meta-languages contain _tab_ characters.
     It appears that the authors of the files have used various tab-width settings.
     The generated pages currently interpret tab characters as 8 spaces,
     which may give different alignment from that shown in Spoofax.
 
 The colours, font-styles, and font-weights should appear the same in the browser
 as in Spoofax when using a light theme.
-Spoofax automatically inverts the lightness of the colours when Eclipse is using a dark theme;
-however, this feature has not yet been implemented on the hyperlinked twins,
-so the toggle for switching to dark mode is currently omitted.
+
+Spoofax automatically inverts the lightness of the colours when Eclipse is using a dark theme.
+This feature has now been implemented on the hyperlinked twins,
+with a toggle for switching between light and dark mode.
