@@ -7,21 +7,31 @@ The following explanations may however clarify the rationale for some features.
 
 A specification in a Spoofax meta-language may consist of a collection of modules,
 each in a separate file.
-Name binding is multi-file: a name declared in one module may be referenced in other modules.[^imports]
+
+Name binding is multi-file:
+a name declared in one module may be referenced in other modules.[^imports]
 
 [^imports]: In some meta-languages, module imports are implicit.
 
+### Name references
+
 Each name reference in a hyperlinked twin webpage is a clickable link to a declaration.
+
 However, a name declaration may be split across different pages;
 a reference to the name then links to its first declaration
 (either in the same file as the reference,
 otherwise in the file with the file with the first relative URL, ordered lexicographically).
 
+### Name declarations
+
 In general, there may be any number of references to a name declaration.
 Each declaration in the generated webpage links to the first such reference.
 
+### Tooltips
+
 Each name reference and declaration has a `title` attribute that browsers may display
 when hovering over the name with a pointing device.[^title]
+
 The title shows the line number of the target of the link,
 together with the relative URL of its module for hyperlinks to other files.
 It also lists the line numbers and URLs of any further occurrences of the name.[^missing]
@@ -34,9 +44,14 @@ It also lists the line numbers and URLs of any further occurrences of the name.[
     Then the title on a declaration may indicate that there are no references to it,
     which may be misleading.
 
+### Popups
+
+> Not yet implemented
+
 When the title of a name reference or declaration contains more than one line number,
 it should be possible to display it as a pop-up or modal
 containing clickable links to all the listed lines and files.
+
 However, this is not currently a feature of Spoofax itself,
 and the appearance of pop-ups might be too distracting when browsing a hyperlinked twin.
 Perhaps clicking on a name should display a modal whenever the name is linked to lines on more than one page,
@@ -44,8 +59,12 @@ instead of linking directly to an occurrence on the first page.
 
 ## Formatting
 
+### Page layout
+
 The generated hyperlinked twins display the title of each file at the top of the page,
 followed by a link to the GitHub repo file from which the page was generated.
+
+### Typography
 
 The verbatim display of the specification text uses a fixed-width font,
 to ensure that alignment corresponds exactly to that shown on GitHub.
@@ -56,6 +75,8 @@ to ensure that alignment corresponds exactly to that shown on GitHub.
     It appears that the authors of the files have used various tab-width settings.
     The generated pages currently interpret tab characters as 8 spaces,
     which may give different alignment from that shown in Spoofax.
+
+### Colour themes
 
 The colours, font-styles, and font-weights should appear the same in the browser
 as in Spoofax when using a light theme.
