@@ -23,13 +23,16 @@ Meta-language | Hyperlinked twin | :simple-github: repository
 [NaBL2]       | [NaBL2 website]  | [NaBL2 project]
 [Statix]      | [Statix website] | [Statix project]
 
+Language | Hyperlinked twin       | :simple-github: repository
+---------|------------------------|---------------------------
+Java     | [Java Front website]   | [Java Front project]
+
 ## MetaBorg Cube
 
 :simple-github: [`metaborgcube`][metaborgcube]
 
 Language | Hyperlinked twin       | :simple-github: repository
 ---------|------------------------|---------------------------
-Java     | [Java Front website]   | [Java Front project]
 Tiger    | [Tiger Statix website] | [Tiger Statix project]
 
 [metaborg]: https://github.com/metaborg
@@ -50,7 +53,10 @@ Tiger    | [Tiger Statix website] | [Tiger Statix project]
 [Statix website]: https://pdmosses.github.io/nabl/statix.lang
 [Statix project]: https://github.com/metaborg/nabl/tree/master/statix.lang
 
+[Java Front website]: https://pdmosses.github.io/java-front/lang.java
+[Java Front project]: https://github.com/metaborg/java-front/tree/master/lang.java
+
 [metaborgcube]: https://github.com/metaborgcube
 
-[Java Front website]: https://pdmosses.github.io/java-front/lang.java)
-[Java Front project]: https://github.com/metaborgcube/java-front/tree/master/lang.java)
+[Tiger Statix website]: https://pdmosses.github.io/metaborg-tiger/org.metaborg.lang.tiger.statix
+[Tiger Statix project]: https://github.com/metaborg/metaborg-tiger/tree/master/org.metaborg.lang.tiger.statix
