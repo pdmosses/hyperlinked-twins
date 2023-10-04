@@ -12,7 +12,7 @@ added to Spoofax meta-language projects.
 
 [^nabl2]: NaBL2 is omitted because Spoofax does not support name-based navigation in NaBL2 specifications.
 
-## Meta-language specifications
+## Spoofax meta-language specifications
 
 Meta-language | Hyperlinked twin | :simple-github: repository | Name-binding
 --------------|------------------|----------------------------|-------------
@@ -27,6 +27,12 @@ Language | Hyperlinked twin       | :simple-github: repository | Name-binding
 ---------|------------------------|----------------------------|-------------
 Java     | [Java Front website]   | [Java Front project]       | –
 Tiger    | [Tiger Statix website] | [Tiger Statix project]     | Statix
+
+## Domain-specific language specifications
+
+Language | Hyperlinked twin        | :simple-github: repository | Name-binding
+---------|-------------------------|----------------------------|-------------
+WebDSL   | [WebDSL Statix website] | [WebDSL Statix project]    | Statix
 
 [metaborg]: https://github.com/metaborg
 
@@ -53,3 +59,6 @@ Tiger    | [Tiger Statix website] | [Tiger Statix project]     | Statix
 
 [Tiger Statix website]: https://pdmosses.github.io/metaborg-tiger/org.metaborg.lang.tiger.statix
 [Tiger Statix project]: https://github.com/metaborg/metaborg-tiger/tree/master/org.metaborg.lang.tiger.statix
+
+[WebDSL Statix website]: https://pdmosses.github.io/webdsl-statix/webdslstatix
+[WebDSL Statix project]: https://github.com/webdsl/webdsl-statix/tree/master/webdslstatix
