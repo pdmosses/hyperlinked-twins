@@ -12,28 +12,21 @@ added to Spoofax meta-language projects.
 
 [^nabl2]: NaBL2 is omitted because Spoofax does not support name-based navigation in NaBL2 specifications.
 
-## MetaBorg
+## Meta-language specifications
 
-:simple-github: [`metaborg`][metaborg]
+Meta-language | Hyperlinked twin | :simple-github: repository | Name-binding
+--------------|------------------|----------------------------|-------------
+[SDF3]        | [SDF3 website]   | [SDF3 project]             | NaBL
+[NaBL]        | [NaBL website]   | [NaBL project]             | NaBL
+[NaBL2]       | [NaBL2 website]  | [NaBL2 project]            | –
+[Statix]      | [Statix website] | [Statix project]           | NaBL2
 
-Meta-language | Hyperlinked twin | :simple-github: repository
---------------|------------------|---------------------------
-[SDF3]        | [SDF3 website]   | [SDF3 project]
-[NaBL]        | [NaBL website]   | [NaBL project]
-[NaBL2]       | [NaBL2 website]  | [NaBL2 project]
-[Statix]      | [Statix website] | [Statix project]
+## Programming language specifications
 
-Language | Hyperlinked twin       | :simple-github: repository
----------|------------------------|---------------------------
-Java     | [Java Front website]   | [Java Front project]
-
-## MetaBorg Cube
-
-:simple-github: [`metaborgcube`][metaborgcube]
-
-Language | Hyperlinked twin       | :simple-github: repository
----------|------------------------|---------------------------
-Tiger    | [Tiger Statix website] | [Tiger Statix project]
+Language | Hyperlinked twin       | :simple-github: repository | Name-binding
+---------|------------------------|----------------------------|-------------
+Java     | [Java Front website]   | [Java Front project]       | –
+Tiger    | [Tiger Statix website] | [Tiger Statix project]     | Statix
 
 [metaborg]: https://github.com/metaborg
 
