@@ -9,9 +9,7 @@ A specification in a Spoofax meta-language may consist of a collection of module
 each in a separate file.
 
 Name binding is multi-file:
-a name declared in one module may be referenced in other modules.[^imports]
-
-[^imports]: In some meta-languages, module imports are implicit.
+a name declared in one module may be referenced in other modules.
 
 ### Name references
 
@@ -20,7 +18,7 @@ Each name reference in a hyperlinked twin webpage is a clickable link to a decla
 However, a name declaration may be split across different pages;
 a reference to the name then links to its first declaration
 (either in the same file as the reference,
-otherwise in the file with the file with the first relative URL, ordered lexicographically).
+otherwise in the file with the first relative URL, ordered lexicographically).
 
 ### Name declarations
 
@@ -37,7 +35,7 @@ together with the relative URL of its module for hyperlinks to other files.
 It also lists the line numbers and URLs of any further occurrences of the name.[^missing]
 
 [^title]: Browsers on mobile devices don't display title attributes.
-    Moreover, it appears that the Safari desktop browser doesn't when full-screen. 
+    Moreover, it appears that the Safari desktop browser doesn't display them when viewing full-screen. 
 
 [^missing]: It appears that the Spoofax name analysis does not always include inter-module references
     in the absence of direct imports.
@@ -52,8 +50,7 @@ When the title of a name reference or declaration contains more than one line nu
 it should be possible to display it as a pop-up or modal
 containing clickable links to all the listed lines and files.
 
-However, this is not currently a feature of Spoofax itself,
-and the appearance of pop-ups might be too distracting when browsing a hyperlinked twin.
+However, the appearance of pop-ups might be too distracting when browsing a hyperlinked twin.
 Perhaps clicking on a name should display a modal whenever the name is linked to lines on more than one page,
 instead of linking directly to an occurrence on the first page.
 
@@ -61,8 +58,10 @@ instead of linking directly to an occurrence on the first page.
 
 ### Page layout
 
-The generated hyperlinked twins display the title of each file at the top of the page,
-followed by a link to the GitHub repo file from which the page was generated.
+The generated hyperlinked twins display the title of each file at the top of the page.
+
+A link to the GitHub repo file from which the page was generated may be visible at the top right.
+On small screens, it is shown at the top of the navigation menu.
 
 ### Typography
 
@@ -74,7 +73,7 @@ to ensure that alignment corresponds exactly to that shown on GitHub.
     Unfortunately, many files in Spoofax meta-languages contain _tab_ characters.
     It appears that the authors of the files have used various tab-width settings.
     The generated pages currently interpret tab characters as 8 spaces,
-    which may give different alignment from that shown in Spoofax.
+    which may give different alignment from that shown when browsing in Spoofax.
 
 ### Colour themes
 

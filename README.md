@@ -1,2 +1,3 @@
 # hyperlinked-twins
- Generating websites with support for name-based navigation
+
+ Generated websites with support for name-based code navigation
