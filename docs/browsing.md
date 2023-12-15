@@ -5,25 +5,32 @@ The following explanations may however clarify the rationale for some features.
 
 ## Name-based navigation
 
-A specification in a Spoofax meta-language may consist of a collection of modules,
-each in a separate file.
+Name-based navigation uses hyperlinks between references and declarations
+to browse a repository.
 
-Name binding is multi-file:
-a name declared in one module may be referenced in other modules.
+Clicking on a hyperlinked name can be much easier than trying to locate
+the declaration of a name manually – especially in a large and unfamiliar repository,
+or in a language with unfamiliar name binding constructs.
+
+Clicking on names is also much less effort than drilling up and down in nested directories,
+scrolling around in individual pages,
+or using search interfaces.
 
 ### Name references
 
 Each name reference in a hyperlinked twin webpage is a clickable link to a declaration.
 
-However, a name declaration may be split across different pages;
-a reference to the name then links to its first declaration
-(either in the same file as the reference,
-otherwise in the file with the first relative URL, ordered lexicographically).
+However, a name may refer to a non-unique declaration;
+the reference then links to its first declaration
+(either in the same page as the reference,
+otherwise in the page with the first relative URL, ordered lexicographically).
 
 ### Name declarations
 
 In general, there may be any number of references to a name declaration.
-Each declaration in the generated webpage links to the first such reference.
+Each declaration in the generated webpage links directly to the first reference to it
+when all the references are in a single page;
+otherwise clicking on the name displays a modal with a link to a reference in each page.
 
 ### Tooltips
 
@@ -31,28 +38,21 @@ Each name reference and declaration has a `title` attribute that browsers may di
 when hovering over the name with a pointing device.[^title]
 
 The title shows the line number of the target of the link,
-together with the relative URL of its module for hyperlinks to other files.
-It also lists the line numbers and URLs of any further occurrences of the name.[^missing]
+together with the relative URL for hyperlinks to other pages.
+It also lists the line numbers and URLs of any further occurrences of the name.
 
 [^title]: Browsers on mobile devices don't display title attributes.
-    Moreover, it appears that the Safari desktop browser doesn't display them when viewing full-screen. 
-
-[^missing]: It appears that the Spoofax name analysis does not always include inter-module references
-    in the absence of direct imports.
-    Then the title on a declaration may indicate that there are no references to it,
-    which may be misleading.
+    Moreover, the Safari desktop browser (version 17) doesn't display them. 
 
 ### Popups
 
-> Not yet implemented
+Clicking on a name declaration displays a modal whenever there are references to it
+on more than one page.
+The modal has a link to a reference on each page.
 
-When the title of a name reference or declaration contains more than one line number,
-it should be possible to display it as a pop-up or modal
-containing clickable links to all the listed lines and files.
+!!! tip
 
-However, the appearance of pop-ups might be too distracting when browsing a hyperlinked twin.
-Perhaps clicking on a name should display a modal whenever the name is linked to lines on more than one page,
-instead of linking directly to an occurrence on the first page.
+    To close a modal, either click its × button, or click anywhere outside the modal.
 
 ## Formatting
 
@@ -60,8 +60,7 @@ instead of linking directly to an occurrence on the first page.
 
 The generated hyperlinked twins display the title of each file at the top of the page.
 
-A link to the GitHub repo file from which the page was generated may be visible at the top right.
-On small screens, it is shown at the top of the navigation menu.
+They also display a link to the GitHub repository file from which each page was generated.
 
 ### Typography
 
