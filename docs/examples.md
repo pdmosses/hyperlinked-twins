@@ -47,8 +47,8 @@ WebDSL   | [WebDSL Statix website] | [WebDSL Statix project]    | Statix
 [NaBL project]: https://github.com/metaborg/nabl/tree/master/org.metaborg.meta.lang.nabl
 
 [NaBL2]: https://www.metaborg.org/en/latest/source/langdev/meta/lang/nabl2/index.html
-[NaBL2 website]: https://pdmosses.github.io/nabl/org.metaborg.meta.nabl2.lang
-[NaBL2 project]: https://github.com/metaborg/nabl/tree/master/org.metaborg.meta.nabl2.lang
+[NaBL2 website]: https://pdmosses.github.io/nabl/nabl2.lang
+[NaBL2 project]: https://github.com/metaborg/nabl/tree/master/nabl2.lang
 
 [Statix]: https://spoofax.dev/references/statix/
 [Statix website]: https://pdmosses.github.io/nabl/statix.lang
@@ -60,7 +60,7 @@ WebDSL   | [WebDSL Statix website] | [WebDSL Statix project]    | Statix
 [metaborgcube]: https://github.com/metaborgcube
 
 [Tiger Statix website]: https://pdmosses.github.io/metaborg-tiger/org.metaborg.lang.tiger.statix
-[Tiger Statix project]: https://github.com/metaborg/metaborg-tiger/tree/master/org.metaborg.lang.tiger.statix
+[Tiger Statix project]: https://github.com/metaborgcube/metaborg-tiger/tree/master/org.metaborg.lang.tiger.statix
 
 [Poosl website]: https://pdmosses.github.io/metaborg-poosl/org.metaborg.lang.poosl
 [Poosl project]: https://github.com/metaborgcube/metaborg-poosl/tree/master/org.metaborg.lang.poosl
