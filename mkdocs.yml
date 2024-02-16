@@ -27,7 +27,7 @@ theme:
     - navigation.indexes 
     # - navigation.tabs
     # - navigation.tabs.sticky
-    - toc.integrate
+    # - toc.integrate
 
 plugins:
   - search
